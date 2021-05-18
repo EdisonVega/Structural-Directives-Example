@@ -1,0 +1,26 @@
+#productos {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #productos td, #productos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center !important;
+    vertical-align: middle !important;
+    max-width: 200px;
+  }
+
+  #productos tr:nth-child(even){background-color: #f2f2f2;}
+
+  #productos tr:hover {background-color: #ddd;}
+
+  #productos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background: rgb(90, 181, 255);
+    font-size: 110%;
+    color: black;
+  }

@@ -1,0 +1,18 @@
+<br>
+<h2 style="text-align:center">Tabla de productos</h2>
+<hr>
+
+<table id="productos">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+
+</table>
