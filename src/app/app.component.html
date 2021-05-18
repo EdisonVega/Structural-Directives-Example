@@ -3,9 +3,7 @@
   <h1>
     Aprendamos Angular Top Tech
   </h1>
-
   <h3>Este es un ejemplo de un ngSwitch</h3>
-
   <mat-radio-group name="opciones" [(ngModel)]="ejemploSeleccionado">
     <mat-radio-button *ngFor="let op of ejemplosDisponibles" name="opciones" [value]="op"  style="margin: 10px">
       {{op}}
@@ -13,7 +11,8 @@
   </mat-radio-group>
 </div>
 
-<div class="container" [ngSwitch]="ejemploSeleccionado">
+<div class="container"  style="text-align:center" [ngSwitch]="ejemploSeleccionado">
   <app-ngfor-example *ngSwitchCase="'ngFor Ejemplo Tabla con material'"></app-ngfor-example>
   <app-ngfor-example-witouth-material *ngSwitchCase="'ngFor Ejemplo Tabla sin material'"></app-ngfor-example-witouth-material>
+  <app-ng-if-example *ngSwitchCase="'ngIf Ejemplo'"></app-ng-if-example>
 </div>

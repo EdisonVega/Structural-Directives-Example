@@ -61,6 +61,6 @@ export class NgforExampleWitouthMaterialComponent {
     {"id_producto":50,"nombre":"Café","id_categoria":8,"codigo_barras":"6351 R33 92","precio_venta":7200.00,"cantidad_stock":400,"estado":true},
     ];
 
-
+    constructor(){ }
 
 }

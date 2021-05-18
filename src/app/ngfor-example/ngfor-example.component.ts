@@ -74,4 +74,6 @@ export class NgforExampleComponent {
   displayedColumns: string[] = ['nombre', 'codigo_barras', 'precio_venta', 'cantidad_stock','estado'];
   dataSource = DATA;
 
+  constructor(){ }
+
 }

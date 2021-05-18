@@ -1,0 +1,21 @@
+<br>
+<p>Si la lista de nombres alcanza una longitud de 5 el div se elimina y se presenta un boton de reset,
+   de lo contrario permitirá seguir añadiendo nombres
+</p>
+<div *ngIf="namesList.length < 5">
+
+   <br>
+    <input type="text" [(ngModel)]="inputName">
+    <button (click)="addName()">Añadir nombre</button>
+</div>
+
+<div *ngIf="namesList.length == 5">
+    <button (click)="resetList()">Reiniciar lista</button>
+</div>
+
+<br>
+<p *ngFor="let item of namesList; index as i" >
+  {{i}} - Hola {{item}}!
+</p>
+
+

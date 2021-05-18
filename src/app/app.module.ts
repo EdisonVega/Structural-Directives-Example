@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
+import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 
 
 
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     NgforExampleComponent,
-    NgforExampleWitouthMaterialComponent
+    NgforExampleWitouthMaterialComponent,
+    NgIfExampleComponent
   ],
   imports: [
     BrowserModule,
